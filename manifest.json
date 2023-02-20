@@ -1,0 +1,10 @@
+{
+  "name": "Outbrain",
+  "description": "Outbrain",
+  "namespace": "outbrain",
+  "icon": "assets/outbrain-logo.svg",
+  "categories": ["Advertising"],
+  "provides": ["events"],
+  "allowCustomFields": true,
+  "permissions": {}
+}
