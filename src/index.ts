@@ -11,6 +11,7 @@ interface OutbrainParams {
 
 export const eventHandler = async (
   eventType: string,
+  manager: Manager,
   event: MCEvent,
   settings: ComponentSettings
 ) => {
@@ -39,14 +40,14 @@ export const eventHandler = async (
     ...params,
   }).toString()
 
-  fetch(`${baseUrl}${unifiedPixel}?${stringifiedParams}`)
+  manager.fetch(`${baseUrl}${unifiedPixel}?${stringifiedParams}`)
 }
 
 export default async function (manager: Manager, settings: ComponentSettings) {
   manager.addEventListener('pageview', event => {
-    eventHandler('pageview', event, settings)
+    eventHandler('pageview', manager, event, settings)
   })
   manager.addEventListener('event', event => {
-    eventHandler('event', event, settings)
+    eventHandler('event', manager, event, settings)
   })
 }
