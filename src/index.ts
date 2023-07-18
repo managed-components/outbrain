@@ -13,7 +13,7 @@ export const eventHandler = async (
   eventType: string,
   manager: Manager,
   event: MCEvent,
-  settings: ComponentSettings
+  _settings: ComponentSettings
 ) => {
   const { client, payload } = event
 
