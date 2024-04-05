@@ -1,6 +1,6 @@
 {
   "name": "@managed-components/outbrain",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Managed Component for Outbrain",
   "main": "dist/index.js",
   "scripts": {
