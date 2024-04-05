@@ -6,5 +6,10 @@
   "categories": ["Advertising"],
   "provides": ["events"],
   "allowCustomFields": true,
-  "permissions": {}
+  "permissions": {
+    "server_network_requests": {
+      "description": "Outbrain uses serverside network requests to report data",
+      "required": true
+    }
+  }
 }
