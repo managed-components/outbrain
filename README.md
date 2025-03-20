@@ -30,6 +30,15 @@ Your account identifier
 - Page View
 - Event
 
+### Order ID `string` _optional_
+`orderId` - The order ID of the event. 
+
+### Order Value `string` _optional_
+`orderValue` - The order value of the event.
+
+### Currency `string` _optional_
+`currency` - The currency of the order value.
+
 ### Event Name `string`
 
 `name` - This is what you want to get to Outbrain as the event name. (e.g. Register)
