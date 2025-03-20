@@ -30,6 +30,10 @@ Your account identifier
 - Page View
 - Event
 
+### Event Name `string`
+
+`name` - This is what you want to get to Outbrain as the event name. (e.g. Register)
+
 ### Order ID `string` _optional_
 `orderId` - The order ID of the event. 
 
@@ -39,9 +43,11 @@ Your account identifier
 ### Currency `string` _optional_
 `currency` - The currency of the order value.
 
-### Event Name `string`
+### Click ID `string` _optional_
+`clickId` - The click ID of the event.
 
-`name` - This is what you want to get to Outbrain as the event name. (e.g. Register)
+If not provided, the click ID will be taken from the URL using either `OutbrainClickId` or `dicbo` URL param (see [docs](https://www.outbrain.com/help/advertisers/server2server-integrations/) to learn how to configure this in Outbrain). Once set either from the event field payload or from the URL params, it will be saved and sent along with other requests to Outbrain within the same session.
+
 
 ## 📝 License
 
